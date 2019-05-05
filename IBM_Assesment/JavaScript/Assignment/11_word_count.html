@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>No of Word Occurance</title>
+</head>
+<body>
+	---- Program to Count the number of Times the word is occuring ----
+<br>
+<br>
+	"Enter the Input String"
+	<br>
+	<input id="Message" type="text" >
+	<br>
+	"Find the word to count"
+	<br>
+	<input id="countword" type="text">
+	<button onclick="numcount();"> count</button>
+	<script type="text/javascript">
+		function numcount()
+		{
+			var message_input = document.getElementById('Message').value;
+			var count_word = document.getElementById('countword').value;
+			var Final_array= message_input .split(' ');
+			var count=0;
+			for (var i = 0; i <  Final_array.length; i++) 
+			{
+								if(count_word  ==  Final_array[i])
+								{
+									count++;
+								}
+			}
+			document.write("The number of Occurance is:")
+			document.write(count);		
+				
+		}
+	</script>
+
+</body>
+</html>

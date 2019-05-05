@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+<title> moves Div</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style type="text/css">
+
+        div {
+  width:100px;
+  height:100px;
+  background:yellow;
+ margin:100px;
+}
+
+div.active {
+  transform: scale(3,2);
+}
+</style>
+
+</head>
+<body>
+    <script type="text/javascript">
+        $(function(){
+    $("div").click(function(){
+        $(this).toggleClass("active")
+    });
+});
+    </script>
+    <div>CLICK ME TO SEE THE LARGER VIEW!!!</div>
+</body>
+</html>

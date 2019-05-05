@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+----Program to Highlight the text which are Given Bold----
+<br>
+<br>
+<button id="cl" onclick="fun()"><p> hi<b> please identify</b> bold letters <b> by clicking down!!</b>can you do? <br>click here</p></button>
+<script type="text/javascript">
+
+	function fun()
+	{
+	var bld = document.getElementsByTagName("B");
+	for (var i = 0; i < bld.length; i++) {
+		document.getElementsByTagName("B")[i].style.backgroundColor = "yellow";
+	}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+
+    
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Current Date & Time Calculator</title>
+</head>
+
+<body>
+---- Program to check Current Time and Date ----
+<br>
+<br>
+
+<script type="text/javascript">
+	
+	document.write("Today is :",fn_Datecalculator());
+	document.write("<br>");
+	document.write("Time Now is :",fn_timecalculator());
+
+	function fn_Datecalculator()
+	{
+		var date_now = new Date();
+		var weekday_array_list = new Array(7);
+			weekday_array_list[1] = "Monday";
+			weekday_array_list[2] = "Tuesday";
+			weekday_array_list[3] = "Wednesday";
+			weekday_array_list[4] = "Thursday";
+			weekday_array_list[5] = "Friday";
+			weekday_array_list[6] = "Saturday";
+		var n = weekday_array_list[date_now.getDay()];
+		return n;	
+		
+	}
+	function fn_timecalculator() 
+	{
+        var date_now = new Date();
+        var hours = date_now.getHours() > 12 ? date_now.getHours() - 12 : date_now.getHours();
+        var Meridian_calculation = date_now.getHours() >= 12 ? "PM" : "AM";
+        current_hours = hours < 10 ? "0" + hours : hours;
+        var current_minutes = date_now.getMinutes() < 10 ? "0" + date_now.getMinutes() : date_now.getMinutes();
+        var current_seconds = date_now.getSeconds() < 10 ? "0" + date_now.getSeconds() : date_now.getSeconds();
+        current_time = current_hours + ":" + current_minutes + ":" + current_seconds + " " + Meridian_calculation ;	
+	return current_time;
+    };
+</script>
+</body>
+</html>

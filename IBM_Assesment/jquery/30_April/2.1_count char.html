@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>tex</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+</head>
+<body>
+<script>
+  $(document).ready(function() {
+  var len = 0;
+  var maxchar = 20;
+
+  $( '#my-input' ).keyup(function(){
+    len = this.value.length
+    if(len > maxchar){
+        return false;
+    }
+    else if (len > 0) {
+        $( "#remainingC" ).html( "Remaining characters: " +( maxchar - len ) );
+    }
+    else {
+        $( "#remainingC" ).html( "Remaining characters: " +( maxchar ) );
+    }
+  })
+});
+
+</script>
+
+
+<div class="row">
+  <div class="col-sm-6 form-group">
+    <label>Textarea</label>
+    <textarea placeholder="Enter 20 characters" class="form-control" name="my-name" id="my-input" maxlength="20"></textarea><span id='remainingC'></span>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+ 

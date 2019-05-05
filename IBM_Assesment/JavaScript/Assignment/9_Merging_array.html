@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Merging Arrays</title>
+</head>
+<body>
+---- Program to Merge 2 Array Elements and Return Only Unique Elements from the Array----
+<br>
+<br>
+"Enter 1st array of elements separated by comma's"
+<br>
+<input type="text" id="myfirst_array">
+<br>
+"Enter 2nd array of elements separated by comma's"
+<br>
+<input type="text" id="mysecond_array">
+<button type="button" onclick="document.write(fn_merge_array());">merge unique</button>
+<script type="text/javascript">
+			
+			
+function fn_merge_array() {
+
+var arr1 = document.getElementById('myfirst_array').value;
+var arr2 = document.getElementById('mysecond_array').value;
+array1 = arr1.split(',');
+array2 = arr2.split(',');
+    var result_array = [];
+    var arr = array1.concat(array2);
+    var len = arr.length;
+    var assoc = {};
+
+    while(len--) {
+        var item = arr[len];
+
+        if(!assoc[item]) 
+        { 
+            result_array.unshift(item);
+            assoc[item] = true;
+        }
+    }
+
+    return result_array;
+}
+
+
+
+</script>
+</body>
+</html>

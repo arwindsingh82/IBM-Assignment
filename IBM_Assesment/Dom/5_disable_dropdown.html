@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<!--Disable the combo dropdown on click of a button-->
+<html>
+<head><title>Disable_Drop_Down</title></head>
+<body>
+---- Program to Disable the Drop Down List----
+<br>
+<br>	
+<form>
+  <select id="Programming">
+    <option>Python</option>
+    <option>Java</option>
+    <option>C</option>
+
+  </select>
+</form>
+<p>Disable by Clicking the Button </p>
+
+<button onclick="fn_disable_dropdown()">Disable DropDown</button>
+ 	 	 
+
+<script>
+	function fn_disable_dropdown() {
+  		document.getElementById("Programming").disabled = true;
+		}
+</script>
+
+</body>
+</html>

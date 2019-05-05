@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Non Reapeting char</title>
+</head>
+<body>
+<p>Non repeating character in string</p><br>
+
+<script type="text/javascript">
+function nonrepchar(str) {
+   for(var i = 0; i < str.length; i++) {
+      var j = str.charAt(i)
+      if (str.indexOf(j) == str.lastIndexOf(j)) {
+        return j;
+      }
+   }
+   return null;
+}
+
+console.log(nonrepchar("aabbdccg")); 
+
+
+
+
+ /*function fchar(str) {
+ var arr = str.split('');
+var result='';
+ var count = 0; 
+  for (var i = 0; i < arr.length; i++) {
+ 
+  for (var j = 0; j < arr.length; j++) {
+  if (arr[i] === arr[j]) {
+    count+= 1;
+    }
+   }
+
+if (count < 2) {
+ result = arr[i];
+  break;
+  }
+}
+return result;
+}
+console.log(fchar("asif shaik"));*/
+
+
+</script>
+</body>
+</html>
+

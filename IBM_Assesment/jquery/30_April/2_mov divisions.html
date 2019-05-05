@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+<title> moves Div</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style type="text/css">
+    .head{
+        padding: 20px;        
+        background: red;
+    }
+    .content{
+        padding: 20px;
+        margin: 30px 0;
+        border: 1px solid #333;
+         background:yellow;
+    }
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("button").click(function(){
+            $(".content").appendTo("#target");
+           
+        });
+    });
+</script>
+
+    <div id="target" class="head">
+        <h1>appending into</h1>
+    </div>
+    <div class="content">
+        <h1>Hello World.</h1>
+        <p>im being moved.</p>
+        <button type="button">Move</button>
+    </div>    
+</body> 
+</html>                            

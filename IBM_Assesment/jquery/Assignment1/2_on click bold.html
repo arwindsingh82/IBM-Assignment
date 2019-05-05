@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bold on the click</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<button>Click here!</button>
+	<div>division 1</div>
+	<div>division 2</div>
+	<div>division 3</div>
+	<script type="text/javascript">
+		$(document).ready(function() 
+		{
+			$("button").click(function() 
+			{
+				$('div').each(function(index) 
+				{
+				
+					
+					var word = $(this).html().split(" ")[2];
+					console.log(word);
+					$(this).html($(this).text().replace(word,'<b>'+word+'</b>'));	
+				});
+			});
+			
+		});
+			
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>counting of substring in string</title>
+</head>
+<body>
+<p>Occurance of substring in string</p><br>
+<input type="text" id="s1"><br>
+<input type="text" id="s2"><br>
+<button onclick="count_substring()">click</button>
+
+<script type="text/javascript">
+function count_substring(){
+
+var main_str=document.getElementById("s1").value;
+var sub_str=document.getElementById("s2").value;
+
+/*   var count = 0,
+    position = main_str.indexOf(sub_str);
+
+while (position > -1) {
+    ++count;
+    position = main_str.indexOf(sub_str, ++position);
+}
+
+console.log(count); */
+
+
+/*var length = main_str.match(/[a-z]/g).length;
+ //where [a-z] is a regex wildcard expression thats why its slower
+console.log(length); */
+
+var count= main_str.split(sub_str).length - 1;
+console.log(count);
+
+}
+</script>
+</body>
+</html>
+

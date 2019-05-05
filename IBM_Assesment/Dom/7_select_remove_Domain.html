@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	---- Program to Remove the Selected Item From the Drop Down List Box ----
+	<br>
+	<br>
+	<label>Select a Domain:</label><br>
+  	<select id="Selecting_box" size="5">
+  	<option>Developer</option>
+    	<option>Tester</option>
+    	<option>Analyst</option>
+    	<option>Tester</option>
+	<option>Admin</option>
+  	</select>
+
+	<br><br>
+
+<button onclick="fn_remove_Domain()">Select the Domain to be removed</button>
+
+<script>
+	function fn_remove_Domain() 
+	{
+  		var Select_box_document = document.getElementById("Selecting_box");
+  		Select_box_document.remove(Select_box_document.selectedIndex);
+	}
+</script>
+
+</body>
+</html>

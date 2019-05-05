@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+</head>
+<body>
+	---- Program to Check Any Modification in Time ----
+	<br>
+	<br>
+	<button onclick="fn_Modifiedtime();">Last Modified Time Of Document</button>
+	<br>
+	<p id="display_Modification_Time"></p>
+	<script type="text/javascript">
+		function fn_Modifiedtime() 
+		{
+			var Last_Modified=document.lastModified;
+			document.getElementById("display_Modification_Time").innerHTML = Last_Modified;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+
+<html>
+<body>
+---- Program to Display the Last Link in the Document----
+<br>
+<br>
+<p>
+  <a id="1st_anchor" href="Python">PYTHON</a><br>
+  <a id="2nd_anchor" href="windows">WINDOWS</a><br>
+  <a id="3rd_anchor" href="Microsoft">MICROSOFT</a><br>
+  <a id="4th_anchor" href="linux">LINUX</a><br>
+  <a id="5th_anchor" href="macos">MACOS</a><br>
+</p>
+<p>Click the button to display the href value of the last link in the document.</p>
+<button onclick="fn_link_document()">Last Link Check</button>
+<p id="My_sample"></p>
+<script>
+	function fn_link_document() {
+  		var len_link_document=document.links.length;
+ 		var link_document = document.links[len_link_document-1].href;
+  		document.getElementById("My_sample").innerHTML = link_document;
+}
+</script>
+</body>
+</html> 

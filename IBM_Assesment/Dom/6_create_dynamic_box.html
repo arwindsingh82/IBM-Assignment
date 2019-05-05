@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	Dynamic_box_creation	
+	</title>
+</head>
+<body>
+	---- Program to Create Dynamic Boxes Based on requests----
+	<br>
+	<br>
+	<input type="number" id="number_Of_boxes_needed" placeholder="Enter number of boxes to be created">
+	<button onclick="fn_creating_Boxes();">Create</button>
+	<div id="insert_Boxes">
+		
+	</div>
+
+	<script type="text/javascript">
+		function fn_creating_Boxes() 
+		{
+			var number_Of_boxes_needed = document.getElementById('number_Of_boxes_needed').value;
+			for (var total = 0; total < number_Of_boxes_needed; total ++) 
+			{
+				document.getElementById('insert_Boxes').innerHTML += '<br><br> <input type="number" id="new_boxes" placeholder="new_box">';
+			}
+		}
+	</script>
+
+</body>
+</html>

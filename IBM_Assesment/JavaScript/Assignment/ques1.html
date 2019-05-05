@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head> <title>Guess Number check</title>
+</head>
+<body>
+
+<p>Click on the button</p>
+<button onclick="myguess()">check</button>
+<p id="guess"></p>
+<script type="text/javascript">
+function myguess(){
+	  var number = prompt("Please enter number",);
+  if (number>=1 && number<=10) {
+    document.getElementById("guess").innerHTML =
+     "!RightOn"}
+     else{
+     	document.getElementById("guess").innerHTML =
+     "!Unlucky"
+     }
+}
+</script>
+</body>
+</html>

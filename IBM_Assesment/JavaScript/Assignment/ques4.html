@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head> <title>First letter of string in uppercase</title>
+</head>
+<body>
+<script type="text/javascript"> 
+	
+	function titlecase(str){
+	var splitstr= str.toLowerCase().split(' ');
+for(var i=0; i<splitstr.length;i++){
+
+ splitstr[i] = splitstr[i].charAt(0).toUpperCase() + splitstr[i].substring(1);
+}
+ return splitstr.join(' '); 
+}
+alert(titlecase("india iS mY counTRY"));
+
+</script>
+
+</body>
+</html>

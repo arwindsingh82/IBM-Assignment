@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Getting Started with JQuery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<style type="text/css">
+		div{
+			background-color: yellow;
+			height: 50px;
+			width: 200px;
+		}
+	</style>
+
+	<div><span id="spn1" style="color: red"></span></div>
+	<button>click</button>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$("button").click(function(){
+	$("#spn1").html("Already clicked");
+});
+});
+
+
+</script>
+
+
+</body>
+
+</html>
+
+
+
+

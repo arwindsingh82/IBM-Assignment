@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Detect JavaScript Data Types</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+is_string = function(input) {
+  if (Object.prototype.toString.call(input) === '[object String]')
+    return true;
+  else
+    return false;   
+    };
+document.write(is_string('hennaaaaa'));
+document.write(is_string([1, 2, 4, 0]));
+
+</script>
+
+</body>
+</html>

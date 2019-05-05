@@ -1,0 +1,29 @@
+<!--Remove all spans from the html dom-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <title>remove demo</title>
+  <style>
+   div{
+    background: yellow;
+    margin: 6px 0;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ 
+<span>Hello</span>
+<p>how are</p>
+<span>you?</span>
+<button>remove</button>
+ 
+<script>
+$( "button" ).click(function() {
+  $( "span" ).remove();
+});
+</script>
+ 
+</body>
+</html> 

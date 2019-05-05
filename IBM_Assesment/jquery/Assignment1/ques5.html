@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Getting Started with JQuery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+<style type="text/css">
+	.css1{
+		font-weight: bold;
+		color: blue;
+	}
+		.css2{
+		font-size: 22px;
+		color: yellow;
+	}
+</style>
+<div class="css1">Hi I am Arwind</div>
+<div class="css2">Hi I am lucky</div>
+<button>click to change</button>
+<script type="text/javascript">
+$(document).ready(function () {
+$("Button").click(function(){
+   $(".css2").removeClass('css2');
+});
+})
+
+</script>
+
+
+</body>
+
+</html>
+
+
+
+

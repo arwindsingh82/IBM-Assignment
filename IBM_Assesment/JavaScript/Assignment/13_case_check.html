@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>uppercase or not</title>
+</head>
+<body>
+----Program to check whether the index value of the given string is having upper case or not ----
+<br>
+<br>
+"Enter the text"
+<br>
+<input type="text" id="string_value">
+<br>
+"Enter the Index of the Character to check"
+<br>
+<input type="text" id="index_value">
+<button type="button" onclick="document.write(fn_casecheck());">check</button>
+<script type="text/javascript">
+
+
+function fn_casecheck(){
+	var string_value = document.getElementById('string_value').value;
+	var index_value = document.getElementById('index_value').value; 
+ 	if(string_value.charAt(index_value).toUpperCase() === string_value.charAt(index_value))
+		return ("Yes It is in Uppercase");
+	else
+		return("No It is not a Uppercase");
+
+    }
+
+
+
+</script>
+</body>
+</html>
