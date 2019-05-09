@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Remove Last Row</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<p><b>Click button to remove last row in table</b></p>
+	<div>
+		<table id="col1">
+			<tbody>
+				<tr>
+					<th>Emp_no.</th><th>Name</th><th>Domain</th>
+				</tr>
+				<tr>
+					<td>101</td><td>Arwind</td><td>FSD</td>
+				</tr>
+				<tr>
+					<td>102</td><td>Krishna</td><td>SAP</td>
+				</tr>
+				<tr>
+					<td>103</td><td>Palak</td><td>Oracle</td>
+				</tr>
+			</tbody>
+		</table>
+		
+	</div>
+
+<button id="btn1">click to remove</button>
+
+<script type="text/javascript">
+$(document).ready(function() {
+$("#btn1").click(function() {
+	$("#col1 tbody tr").remove('tr:last');
+		//$("#col1 tbody tr").remove('tr:first');
+			//$("#col1 tbody tr").remove('tr:nth-child(2)');
+
+});
+			});
+
+</script>
+</body>
+</html>

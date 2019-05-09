@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Value of first col</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div>
+		<table id="col1">
+			<tbody>
+				<tr>
+					<th>Emp_no.</th><th>Name</th><th>Domain</th>
+				</tr>
+				<tr>
+					<td>101</td><td>Arwind</td><td>FSD</td>
+				</tr>
+				<tr>
+					<td>102</td><td>Krishna</td><td>SAP</td>
+				</tr>
+				<tr>
+					<td>103</td><td>Palak</td><td>Oracle</td>
+				</tr>
+			</tbody>
+		</table>
+		
+	</div>
+
+<button id="btn1">show</button>
+
+<script type="text/javascript">
+$(document).ready(function() {
+			$("#btn1").click(function(){
+$("#col1 tbody tr").each(function(){
+
+    var value= $(this).find("td:first").text();
+        //var value= $(this).find("td:last").text();
+            //var value= $(this).find("td:nth-child(2)").text();
+    console.log(value);
+});
+});
+			});
+
+</script>
+</body>
+</html>
+

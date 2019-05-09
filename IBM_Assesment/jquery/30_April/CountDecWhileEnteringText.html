@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text Length Count While Entering Text</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div>
+		
+			<input type="text"  maxlength="20" />
+			<p>	<span id="remainchars">20</span> character remaining</p>
+		
+	</div>
+
+
+<button type="submit">submit</button>
+
+<script type="text/javascript">
+	var maxlength=20;
+	$(document).ready(function(){
+$('input').keyup(function() {
+  var textlen = maxlength - $(this).val().length;
+  $('#remainchars').text(textlen);
+});
+
+
+	});
+</script>
+</body>
+</html>
+

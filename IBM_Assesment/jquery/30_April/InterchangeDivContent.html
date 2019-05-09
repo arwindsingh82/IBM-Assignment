@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interchange Div Content</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="source">
+		I am		
+	</div>
+
+<div id="destination">Arwind</div>
+
+
+<button type="submit">submit</button>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('button').click(function() {	
+$('#source').appendTo('#destination');
+//$('#source').prependTo('#destination');
+});
+
+	});
+
+</script>
+</body>
+</html>
+
